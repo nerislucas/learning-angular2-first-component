@@ -5,6 +5,7 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { FirstComponent } from './first-component/first-component';
 import { SecondComponentComponent } from './second-component/second-component.component';
+import { FirstModuleModule } from './first-module/first-module.module';
 
 
 @NgModule({
@@ -14,7 +15,8 @@ import { SecondComponentComponent } from './second-component/second-component.co
     SecondComponentComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FirstModuleModule
   ],
   providers: [],
   bootstrap: [AppComponent]
