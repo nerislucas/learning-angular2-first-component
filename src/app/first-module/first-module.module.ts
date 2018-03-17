@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { TillerComponentComponent } from './tiller-component/tiller-component.component';
 import { QuarterComponentComponent } from './quarter-component/quarter-component.component';
+import { FifthComponentComponent } from './fifth-component/fifth-component.component';
 
 @NgModule({
   imports: [
@@ -9,7 +10,7 @@ import { QuarterComponentComponent } from './quarter-component/quarter-component
   ],
   declarations: [
     TillerComponentComponent
-    , QuarterComponentComponent
+    , QuarterComponentComponent, FifthComponentComponent
   ],
   exports: [
     TillerComponentComponent
