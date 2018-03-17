@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { TillerComponentComponent } from './tiller-component/tiller-component.component';
 import { QuarterComponentComponent } from './quarter-component/quarter-component.component';
 import { FifthComponentComponent } from './fifth-component/fifth-component.component';
+import { LanguagesService } from './fifth-component/languages.service';
 
 @NgModule({
   imports: [
@@ -14,6 +15,9 @@ import { FifthComponentComponent } from './fifth-component/fifth-component.compo
   ],
   exports: [
     TillerComponentComponent
+  ],
+  providers: [
+    LanguagesService
   ]
 })
 export class FirstModuleModule { }

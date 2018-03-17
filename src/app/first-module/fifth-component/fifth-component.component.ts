@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { LanguagesService } from './languages.service';
 
 @Component({
   selector: 'app-fifth-component',
@@ -14,15 +15,10 @@ import { Component, OnInit } from '@angular/core';
 export class FifthComponentComponent implements OnInit {
   public domainLanguages: string[];
 
-  constructor() {
-    this.domainLanguages = this.getLanguages();
+  constructor(private languageService: LanguagesService) {
+    this.domainLanguages = this.languageService.getLanguages();
   }
 
   ngOnInit() {
   }
-
-  private getLanguages(): string[] {
-    return ['Aspnet c#', 'Aspnet core C#', 'nodeJS', 'Typescript', 'Angular 2'];
-  }
-
 }
